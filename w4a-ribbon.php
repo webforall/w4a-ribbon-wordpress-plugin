@@ -2,14 +2,14 @@
 
 /**
  * @package w4a-ribbon
- * @version 0.1
+ * @version 0.2
  */
 /*
   Plugin Name: WebForAll Ribbon
   Plugin URI: http://wordpress.org/extend/plugins/w4a-ribbon/
   Description: Adds WebForAll ribbon to your wordpress blog
   Author: ftassi <tassi.francesco@gmail.com>
-  Version: 0.1
+  Version: 0.2
   Author URI: http://flavors.me/ftassi
  */
 
@@ -18,7 +18,7 @@ $w4aRibbon = new W4aRibbon();
 class W4aRibbon
 {
 
-  const VERSION = '0.1';
+  const VERSION = '0.2';
 
   function __construct()
   {
@@ -28,7 +28,7 @@ class W4aRibbon
 
   public function printRibbon()
   {
-    $ribbonPath = plugins_url('w4a-ribbon/images/6ribbon-without.png');
+    $ribbonPath = plugins_url('w4a-ribbon/images/supporter-top-right-big.png');
     ob_start();
     require_once( dirname(__FILE__) . '/template/ribbon.php' );
     echo ob_get_clean();
