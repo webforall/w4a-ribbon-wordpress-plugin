@@ -28,7 +28,7 @@ class W4aRibbon
 
   public function printRibbon()
   {
-    $ribbonPath = plugins_url('w4a-ribbon/images/6ribbon-without.png');
+    $ribbonPath = plugins_url('w4a-ribbon/images/supporter-top-right-big.png');
     ob_start();
     require_once( dirname(__FILE__) . '/template/ribbon.php' );
     echo ob_get_clean();
